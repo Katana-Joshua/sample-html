@@ -1,0 +1,496 @@
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /*   */
+}
+
+
+
+
+
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+p {
+  font-weight: 400;
+  /* font-size: 1rem; */
+}
+
+.back{
+  background-color: white;
+  font-size: 1rem;
+}
+
+
+
+/* Top welcome section */
+header img {
+  max-width: 100px;
+  
+}
+
+header .nav{
+  display: inline; 
+  margin-left: 2.5rem;
+  color: black;
+  
+  
+  .nav-item{
+    display: inline;
+    padding: 0 1rem;
+  }
+
+  .nav-item a{
+    color: black;
+  }
+  .nav-item a:hover{
+    color: red;
+  }
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+
+  .welcome {
+    padding: 5% 7% 0 5%;
+    margin: 0;
+  }
+  .icons {
+    display: inline-block;
+    margin-top: 3rem;
+  }
+}
+#main p {
+  margin: 2rem 0;
+}
+#main header {
+  margin-bottom: 5rem;
+}
+
+.notify-me {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding: 0.8rem 3rem;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons img {
+  width: 30px;
+  display: inline;
+  padding: 0 5px;
+  margin-top: 30px;
+}
+
+.icons {
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+/* Carousel section */
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+
+  .slider-one,
+  .slider-two,
+  .slider-three {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slider-one 12s linear infinite;
+    overflow: hidden;
+
+    .slider-one-image,
+    .slider-two-image,
+    .slider-three-image {
+      width: 100%;
+      height: 100%;
+      background-image: url(./images/caro1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: zoom-out 4s linear infinite;
+
+      .slider-text {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        color: #fff;
+        text-align: center;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .slider-two {
+    animation: slider-two 12s linear infinite;
+    .slider-two-image {
+      background-image: url(./images/caro2.jpg);
+    }
+  }
+
+  .slider-three {
+    animation: slider-three 12s linear infinite;
+    .slider-two-image {
+      background-image: url(./images/caro2.jpg);
+    }
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes xfade {
+  0% {
+  }
+  5.714% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25.714% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider-one {
+  0% {
+    visibility: visible;
+  }
+  33.33% {
+    visibility: hidden;
+  }
+  66.66% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes slider-two {
+  0% {
+    visibility: hidden;
+  }
+  33.33% {
+    visibility: hidden;
+  }
+  66.66% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes slider-three {
+  0% {
+    visibility: hidden;
+  }
+  33.33% {
+    visibility: hidden;
+  }
+  66.66% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+
+
+
+
+
+/* About Us */
+
+#about h1 {
+  margin: 20px 0 5px 0;
+  padding-bottom: 0;
+}
+
+#about p {
+  margin: 0;
+}
+
+#about {
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about-text{
+  padding: 10% 15%;
+}
+.about1 {
+  padding: 0;
+  margin: 0;
+}
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+
+  .img1{order:0;}
+  .img2{order:1;}
+  .img3{order:0;}
+  .img4{order:0;}
+  .img5{order:3;}
+  .img6{order:6;}
+  .img7{order:8;}
+  .img8{order:7}
+  .img2, .img4, .img6, .img8{
+    padding: 13% 10%;
+    text-align: center;
+    vertical-align:middle;
+  }
+
+  
+
+  .card-items {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50%;
+  }
+  .img3{
+    order: 1;
+  }
+}
+
+.card-img-top{
+  width: 100%;
+  height: 40vh;
+}
+
+/* Blockquote */
+blockquote {
+  background-image: url(./images/beach.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 10% 10% ;
+  margin: 0;
+  .cite span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 30px;
+  }
+}
+blockquote p {
+  padding: 20px 30px;
+  font-size: 2rem;
+  font-family: "Libre Baskerville", serif;
+}
+.bi-quote {
+  margin: 20px 0 0 20px;
+}
+
+.lady {
+  background-image: url(./images/lady.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: sticky;
+  top: 0px;
+}
+
+/* Our Work  */
+#work {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+
+
+  .work1 {
+
+    .worktext{
+      padding: 10% 15%;
+    }
+  }
+  .work2 {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+
+    .work2-item{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 50vh;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    
+  }
+}
+
+.workcards {
+  .card {
+    border: none;
+    align-items: center;
+    margin: 20px auto;
+
+    .icons img {
+      width: 30px;
+      height: 20px;
+      display: inline;
+      padding: 0 5px;
+
+      margin: 0;
+    }
+
+    .icons {
+      margin-bottom: 40px;
+      margin-top: 60px;
+      color: grey;
+    }
+    .card-body h5 {
+      font-weight: 600;
+    }
+    .card-body em {
+      font-weight: 200;
+    }
+    .card-text {
+      margin: 0;
+    }
+  }
+}
+
+
+/* Get in Touch */
+
+#contact{
+  display: flex;
+  flex-direction: row-reverse;
+
+  .contact-text{
+    padding: 3% 5%;
+
+    .contact-details img{
+      width: 2rem;
+    }
+
+    .contact-details a{
+      display: block;
+      color: black;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
+  .welcome {
+    height: 80vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    .card-items {
+      width: 100%;
+    }
+  }
+  header .nav{
+    display: none;
+  }
+  .back{
+    display: none;
+  }
+  #work .work2{
+    width: 100%;
+
+    .work2-item{
+      width: 100%;
+      height:auto;
+    }
+  }
+
+  .cards .card-items{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    padding: 20% 10%;
+  }
+
+  .cards{
+
+  .img1{order:0;}
+  .img2{order:0;}
+  .img3{order:0;}
+  .img4{order:0;}
+  .img5{order:0;}
+  .img6{order:0;}
+  .img7{order:0;}
+  .img8{order:0}
+  }
+
+}
